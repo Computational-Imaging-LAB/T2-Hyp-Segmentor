@@ -14,7 +14,7 @@
 
 By downloading the model from [here](https://drive.google.com/file/d/1vfF-IE7fyxN1_Ld98NDFBCP6yt_p_Web/view?usp=sharing) you can use it to segment your T2w images of gliomas. Our model is independent from the input image size. 
 
-We reached 89.88% of dice score on the traning set and 82.9% dice score on the validation set. The results we show in the following are from the test set. 
+We reached **89.88%** of dice score on the traning set and **82.9%** dice score on the validation set. The results we show in the following are from the test set. 
 
 Red channel represents the dilated output. We used (5,5,2) kernel to dilate the image. Hence, it is possible to see more slices segmented as t2 hyper regions. 
 Green channel is the output of the model after post-processing. 
@@ -28,5 +28,23 @@ Briefly we can conclude that white regions on right hand side in the following G
 ![.](https://github.com/Computational-Imaging-LAB/T2-Hyp-Segmentor/blob/main/images/G0027.nii.gif)
 # Bad one
 ![.](https://github.com/Computational-Imaging-LAB/T2-Hyp-Segmentor/blob/main/images/mG0023.gif)
+
+
+For inference;
+
+`git clone https://github.com/Computational-Imaging-LAB/T2-Hyp-Segmentor/`
+
+`cd T2-Hyp-Segmentor`
+
+`pip install -r requirements.txt`
+
+If you want to test the output then use,
+
+`python inference.py --model <model_path> --input <input_nii_path> --output <output_path> --seg <seg_nii_path>`
+
+If you want to use the model to segment
+
+`python inference.py --model <model_path> --input <input_nii_path> --output <output_path> `
+
 
 
