@@ -60,6 +60,8 @@ if __name__=='__main__':
     img=img_nii.get_data().astype('float32')
     if args.seg!='None':
         seg=nib.load(args.seg).get_data().astype('float32')
+    else:
+        seg=np.zeros(img.shape)
 
     if args.bet:
         img=prg.bet(img)
