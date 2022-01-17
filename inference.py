@@ -33,7 +33,7 @@ def load_model(model_path,model):
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='Inference')
-    parser.add_argument('--model', type=str, default='/cta/users/abas/Desktop/segmentation/t2_hyp_segment/checkpoints/model_256_0.179_best.pt', help='model path')
+    parser.add_argument('--model', type=str, default='/cta/users/abas/Desktop/segmentation/t2_hyp_segment/checkpoints/INF_model_256_0.191_best.pt', help='model path')
     parser.add_argument('--input', type=str,default='/cta/users/abas/Desktop/segmentation/t2_hyp_segment/data/test/G0015/T0015/Anatomic/T2_TSE_TRA_448_5MM_YENI_0003/T2_TSE_TRA_448_5MM_YENI_0003.nii',help='input image path')
     parser.add_argument('--seg',type=str,default='/cta/users/abas/Desktop/segmentation/t2_hyp_segment/data/test/G0015/T0015/Segmentations/T0015_T2_HYP.nii',help='it is used for testing')
     parser.add_argument('--output', type=str, default='/cta/users/abas/Desktop/segmentation/t2_hyp_segment/images/output.nii', help='output image path')
@@ -93,14 +93,14 @@ if __name__=='__main__':
     image_lst=[]
     for i in range(img.shape[-1]):
         con_image=np.dstack((img[:,:,i],masked_img[:,:,i],seg[:,:,i]))
-        seg_image=np.dstack((masked_img2[:,:,i],masked_img[:,:,i],seg[:,:,i]))
+        seg_image=np.dstack((masked_img[:,:,i],masked_img[:,:,i],seg[:,:,i]))
         #print(seg_image.shape)
         #cv2.imshow('image',img[:,:,i])
         #cv2.imshow('segs',seg_image)
         im_to_show=np.hstack((np.dstack((img[:,:,i],img[:,:,i],img[:,:,i])),seg_image))
         cv2.imshow('frame',im_to_show)
         image_lst.append(im_to_show)
-        cv2.waitKey(500)
+        cv2.waitKey(200)
 
         
         
