@@ -111,15 +111,15 @@ env.bak/
 venv.bak/
 checkpoints/
 wandb/
+
+serve/
+
 dataloader/data/test
 dataloader/data/train
 dataloader/data/valid
 dataloader/data/raw
 dataloader/data/error
-serve/
-*.npy
-*.ipynb
-*.nii
+
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -137,3 +137,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.npy
+*.ipynb
+*.nii
