@@ -3,10 +3,7 @@
 
 
 [![Maintaner](https://img.shields.io/badge/maintainer-CIL-blue)](https://cil.boun.edu.tr)
-[![Website monip.org](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://www.python.org/)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![made-with-sphinx-doc](https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg)](https://www.sphinx-doc.org/)
-[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://www.python.org/)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Computational-Imaging-LAB/https://computational-imaging-lab.github.io/Identification-of-S100-using-T2-w-images-deep-learning-/blob/master/LICENSE)
 ![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/abdullahbas)
